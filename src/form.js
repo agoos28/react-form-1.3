@@ -67,11 +67,11 @@ class Form extends React.Component {
     }
   }
 
-  componentWillMount () {
+  UNSAFE_componentWillMount () {
     this.emitChange(this.state, true)
   }
 
-  componentWillReceiveProps (props) {
+  UNSAFE_componentWillReceiveProps (props) {
     const { defaultValues, values } = props
     if (
       this.props.defaultValues === defaultValues &&
